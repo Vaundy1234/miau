@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=-1">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+  
+  <link href="NavStyles.css" rel="stylesheet" type="text/css" />
+  <link href="Destination.css" rel="stylesheet" type="text/css" />
+
+  <script src="destination.js"></script>
+  <script defer src="navbar.js"></script>
+</head>
+<body>
+
+  <div class="head-section">
+    <div class="logo-section"><img src="./assets/shared/logo.svg" /> </div>
+    <div class="styled-line"> <!--styling  purpose--> </div>
+    <div class="nav-elements"><span id="zero">00</span>  <a href="./index.html"> HOME </a></div>
+    <div class="nav-elements"><span id="one">01</span>   <a href="./destination.html">DESTINATION</a> </div>
+    <div class="nav-elements"><span id="two">02</span>   <a href="./crew.html">CREW</a> </div>
+    <div class="nav-elements"><span id="three">03</span> <a href="./technology.html"> TECHNOLOGY </a> </div>
+
+    <div class="toggles" >
+      <img src="./assets/shared/icon-hamburger.svg" alt="humberger" id="humberger"/>
+      <img src="./assets/shared/icon-close.svg" alt="close" id="close"/>
+  </div>
+
+</div>
+
+<!--forMobile  Navigation-->
+
+<ul class="mobile-links" style="display: none;">
+<li><a href="./index.html">HOME</a></li>
+<li><a href="./destination.html">DESTINATION</a></li>
+<li><a href="./crew.html">CREW</a></li>
+<li><a href="./technology.html">TECHNOLOGY</a></li>
+<li><a href="#">CONTACT</a></li>
+</ul>
+
+<!--Page Contents below-->
+
+<section class="bodySection">
+  <div class="imageContainer"> <img src="./assets/destination/image-moon.png" id="planet"/></div>
+  <div class="imageDescription">
+      <div class="planet-Navbar">
+        <button onclick="moon()" id="moon">    MOON   </button>
+        <button onclick="mars()" id="mars">    MARS   </button>
+        <button onclick="europa()" id="europa">EUROPA </button>
+        <button onclick="titan()" id="titan">  TITAN  </button> </div>
+
+      <h id="planetTitle">MOON</h>
+      <p id="planetDesc"> See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+  regain perspective and come back refreshed. While you’re there, take in some history 
+  by visiting the Luna 2 and Apollo 11 landing sites. </p>
+        <div class="duration">
+            <div class="distance"> 
+              <div> Avg. distance</div>
+              <span id="dst"> 384,400 KM</span>
+            </div>
+          <div class="time">
+              <div> Est. travel time </div>
+              <span id="tm"> 3 DAYS</span>
+          </div>
+  </div>
+
+</section>
+  <!--
+  Moon
+
+  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+  regain perspective and come back refreshed. While you’re there, take in some history 
+  by visiting the Luna 2 and Apollo 11 landing sites.
+
+  Avg. distance
+  384,400 km
+
+  Est. travel time
+  3 days */-->
+</body>
+</html>

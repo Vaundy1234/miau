@@ -1,0 +1,206 @@
+body{
+    background: url('./assets/destination/background-destination-desktop.jpg');
+}
+
+.bodySection{
+    color: white;
+    margin-top: 40px;
+    margin-right: 40px;
+    height: 450px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imageContainer{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#planet{
+    height: 400px;
+    width: 400px;
+}
+
+.imageDescription{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+}
+
+.planet-Navbar{
+
+    display: flex;
+    justify-content: first baseline;
+}
+
+.planet-Navbar button{
+    height: 60px;
+    width: min-content;
+    font-size: 20px;
+    color: white;
+    background: none;
+    border: none;
+    text-decoration: none;
+}
+
+.planet-Navbar button:hover{
+    text-decoration:underline white;
+    text-underline-offset: 40%;
+
+}
+
+#planetTitle{
+font-size: 10vw;
+letter-spacing: 8px;
+}
+
+#planetDesc{
+    line-height: 25px;
+}
+.duration{
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.distance{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.time{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+#dst{
+    font-size: 28px;
+}
+#tm{
+    font-size: 28px;
+}
+
+
+/* Define the keyframes for the rotation animation */
+@keyframes rotatePlanet {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Apply the animation to the element with ID "planet" */
+  #planet {
+    animation: rotatePlanet 10s linear infinite; /* Adjust the duration and other properties as needed */
+  } 
+  
+
+
+/* Tablet Design View */
+@media (max-width: 960px) {
+body{
+    background: url('./assets/destination/background-destination-tablet.jpg');
+    overflow-y: scroll;
+    background-size: cover;
+}
+.bodySection{
+    flex-direction: column;
+    height: 120vh;
+    width: 100%;
+    align-items: center;
+}
+.imageContainer{
+height: 50%;
+width: 90%;
+}
+
+#planetTitle{
+    justify-content: center;
+    display: flex;
+    font-size: 10vw;
+    letter-spacing: 8px;
+    }
+
+#planet{
+    height: 350px;
+    width: 350px;
+}
+
+.imageDescription{
+    height: 60%;
+    width: 80%;
+    font-size: 22px;
+    letter-spacing: 2px;
+    line-height: 150px;
+}
+
+.duration{
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    line-height: 80px;
+
+}
+
+.distance{
+    align-items: center;
+    width: 100%;
+
+}
+
+.time{
+    align-items: center;
+    width: 100%;
+}
+
+
+#dst{
+    font-size: 8vw;
+}
+#tm{
+    font-size: 8vw;
+}
+
+
+}
+
+
+
+@media (max-width: 540px) {
+body{
+    background: url('./assets/destination/background-destination-tablet.jpg');
+}
+
+.bodySection{
+    margin-right: 20px;
+}
+
+#planet{
+    height: 300px;
+    width:  300px;
+}
+.duration{
+    height: 150px;
+    line-height: 30px;
+}
+#planetTitle{
+    justify-content: center;
+    display: flex;
+    font-size: 10vw;
+    letter-spacing: 8px;
+    }
+
+}

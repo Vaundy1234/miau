@@ -1,0 +1,175 @@
+body{
+    background: url('./assets/technology/background-technology-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    color: white;
+}
+h{
+    font-size: 30px;
+    margin-left: 160px;
+    margin-top: 100px;
+}
+
+.section{
+    margin-top: 4%;
+    height: 500px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+}
+
+.content{
+    height: 500px;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.number-index{
+
+    height: 500px;
+    width: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.index{
+    height: 80px;
+    width: 75px;
+    border-radius: 150px;
+    border: 1px solid aliceblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.index:hover{
+color: black;
+font-size: 30px;
+background-color: whitesmoke;
+transition: 300ms linear;
+}
+
+.info{
+    height: 500px;
+    width: 80%;
+    gap: 10px;
+}
+
+.firstInfo{
+    height: 50px;
+    text-transform: uppercase;
+    font-size: 2;
+}
+.title{
+    text-transform: uppercase;
+    height: 70px;
+    font-size: 4vw;
+}
+.secondInfo{
+    height: 300px;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+.imageContainer{
+    height: 500px;
+    width: 40%;
+    background: url('./assets/technology/image-launch-vehicle-portrait.jpg');
+}
+
+#vehicleImg{
+    height: 100%;
+}
+
+
+
+
+@media (max-width: 960px) {
+    
+    body{
+        background: url('./assets/technology/background-technology-tablet.jpg');
+        background-repeat: no-repeat;
+        background-size: 100vw 130vh;
+        overflow-y: scroll;
+    }
+
+    .section{
+        height: 100%;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+    .secondInfo{
+        line-height: 35px;
+        font-size: 30px;
+    }
+
+    .imageContainer{
+        background: url('./assets/technology/image-launch-vehicle-landscape.jpg') center center no-repeat;
+        overflow: hidden;
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+        }
+
+        
+.imgContainer img {
+    max-width: 100%; /* Set the maximum width to 100% to scale down the image width */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+}
+
+
+
+
+@media (max-width: 540px) {
+    body{
+    background: url('./assets/technology/background-technology-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 200vh;
+}
+h{
+    font-size: 22px;
+    margin-left: 0;
+    height: 50px;
+    width: 800px;
+
+}
+
+.section{
+    margin-top: 70px;
+    width: 85%;
+}
+
+.number-index{
+    height: 400px;
+    margin-top: 80px;
+}
+
+.index{
+    font-size: 20px;
+    height: 45px;
+    width: 40px;
+}
+
+.title{
+    font-size: 7vw;
+}
+
+.secondInfo{
+    font-size: 20px;
+    line-height: 26px;
+}
+
+}

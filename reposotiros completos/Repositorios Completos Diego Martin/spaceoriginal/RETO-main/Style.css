@@ -1,0 +1,148 @@
+
+
+body{
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background: url('./assets/home/background-home-desktop.jpg');
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+
+}
+
+/* Middle section content Styles  */
+
+.body-section{
+  display: flex;
+  height: 80vh;
+  width: 100%;
+  margin: 20px 100px;
+  margin-top: 60px;
+  color: white;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.description{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.explore{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 28px;
+  color: rgb(0, 0, 0);
+}
+
+.circle{
+  height: 290px;
+  width:  290px;
+  border-radius: 150px;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#firstText{
+  font-size: 2vw;
+}
+
+#space{
+  font-size: 150px;
+}
+
+#secondText{
+  font-size: 20px;
+}
+
+
+ /* for Tablet view  design */
+  @media (max-width: 960px) {
+
+    
+  body{
+    background: url('./assets/home/background-home-tablet.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+  }
+  
+
+.body-section{
+  height: 80vh;
+  width: 80%;
+  flex-direction: column;
+}
+.description{
+  width: 70%;
+}
+.circle{
+  height:280px;
+  width: 280px;
+}
+#firstText{
+  font-size: 4vw;
+}
+
+#secondText{
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 3px;
+}
+  }
+
+  /* for mobile view*/
+  @media (max-width: 540px) {
+
+    body{
+      background: url('./assets/home/background-home-mobile.jpg');
+      background-repeat: no-repeat;
+      background-size: 100vw 100vh;  
+    }
+
+   .body-section{
+    height: 70vh;
+    width: 60%;
+    padding-left: 10px;
+    justify-content: center;
+   }
+   
+   .description{
+    width: 130%;
+    margin-right: 70px;
+    height: 50%;
+   }
+   #space{
+    font-size: 80px;
+   }
+
+   #secondText{
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+
+   .explore{
+    width: 100%;
+    margin-right: 70px;
+   }
+
+   .circle{
+    height: 150px;
+    width: 150px;
+   }
+
+  }
+

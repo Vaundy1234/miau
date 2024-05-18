@@ -1,0 +1,26 @@
+@font-face {
+       font-family: "inter";
+       src: url(../clase\ lunes\ 29/assets/fonts/static/Inter-Regular.ttf);
+       font-weight: 800%;
+}
+@font-face {
+       font-family: bold;
+       src: url(../clase\ lunes\ 29/assets/fonts/static/Inter-Bold.ttf);
+       font-weight: 700%;
+}
+body{
+       font-family: bold;
+}
+
+.bg-primary{
+       background-color: #00011a !important;
+}
+
+.text-central{
+       font-weight: 900%;
+       font-size: 60px;
+}
+.letter-3{
+       letter-spacing: 3px;
+
+}
